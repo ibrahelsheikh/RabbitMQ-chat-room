@@ -46,6 +46,12 @@ func main() {
 	// this is the topic I'm interested in
 	for i := 0; ; {
 
+
+                var topic string
+                fmt.Scanln(&topic)
+
+
+
 		body := fmt.Sprintf("Message %d sent form topic %s", i, topic)
 
 		err = ch.Publish(
