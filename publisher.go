@@ -1,10 +1,14 @@
 /*
-USAGE:
-1) you can push to ONLY ONE TOPIC, you may modify this code to emit to multiple topics, loop on publish
-2) THIS CAN'T HAVE * OR #
+CHATROOM tests
 
-go run emit_logs_topic.go anonymous.info # this sends to anonymous.info
-go run emit_logs_topic.go kernel.info  # this sends to kernel.info
+go run publisher.go tanta.politics
+go run publisher.go egypt.politics
+go run publisher.go tanta.fun
+
+go run subscriber.go tanta.*
+go run subscriber.go *.politics
+go run subscriber.go egypt.*
+
 */
 package main
 
