@@ -1,8 +1,9 @@
 /*
 CHATROOM tests
 
-go run publisher.go tanta.politics
 go run publisher.go egypt.politics
+go run publisher.go tanta.politics
+
 go run publisher.go tanta.fun
 
 go run subscriber.go tanta.*
@@ -71,7 +72,7 @@ func severityFrom(args []string) string {
 	// you may try something else
 	var s string
 	if (len(args) < 2) || os.Args[1] == "" {
-		s = "anonymous.info"
+		s = "egypt.politics"
 	} else {
 		s = os.Args[1]
 	}
