@@ -1,8 +1,15 @@
 /*
-USAGE
-go run receive_logs_topic.go *.info # receives from anything having info in the end
-go run receive_logs_topic.go anonymous.*
-go run receive_logs_topic.go kernel.error
+CHATROOM tests
+
+go run publisher.go egypt.politics
+go run publisher.go tanta.politics
+
+go run publisher.go tanta.fun
+
+go run subscriber.go tanta.*
+go run subscriber.go *.politics
+go run subscriber.go egypt.*
+
 */
 package main
 
